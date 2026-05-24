@@ -1,0 +1,6 @@
+{
+  "name": "DOGE Watchdog",
+  "description": "A real-time US government spending tracker and waste watchdog game with live USAspending.gov integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
