@@ -1,21 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Doge-Watchdog
 
-# Run and deploy your AI Studio app
+Doge-Watchdog is a sophisticated Android application designed to enhance civic transparency by monitoring and visualizing government spending. By integrating with public API endpoints, the application provides citizens with an intuitive dashboard to track fiscal allocations and expenditures in real-time.
 
-This contains everything you need to run your app locally.
+Built with a focus on modern Android development practices, Doge-Watchdog leverages high-performance data processing to transform complex financial records into accessible, actionable insights.
 
-View your app in AI Studio: https://ai.studio/apps/5f3baee4-1b87-49a8-ad80-a94b9242d941
+## 🚀 Getting Started
 
-## Run Locally
+Follow these instructions to set up the project and run it on your local environment for development and testing purposes.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+### Prerequisites
 
+- [Android Studio](https://developer.android.com/studio) (Latest Version Recommended)
+- A valid API Key for data services
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+### Installation & Local Setup
+
+1. **Clone the Repository**
+   Open your terminal and clone the project to your local machine.
+
+2. **Open in Android Studio**
+   Launch Android Studio, select **Open**, and navigate to the project directory. Allow the IDE to sync Gradle files and resolve any dependencies.
+
+3. **Configure Environment Variables**
+   The application requires an API key for its data processing engine.
+   - Create a file named `.env` in the root project directory.
+   - Add your key to the file: `GEMINI_API_KEY=your_actual_key_here`
+   - Refer to `.env.example` for the required format.
+
+4. **Build Configuration**
+   To prepare the project for a local debug build, locate the `build.gradle.kts` file in the app module and ensure the signing configuration is set for your local environment (e.g., removing any specific remote signing references if necessary).
+
+5. **Deployment**
+   Select your target device or emulator and click **Run** (Shift + F10) to deploy the application.
