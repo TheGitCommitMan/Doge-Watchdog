@@ -1,34 +1,32 @@
-# Doge-Watchdog
+# 🐕 Doge-Watchdog
 
-Doge-Watchdog is a sophisticated Android application designed to enhance civic transparency by monitoring and visualizing government spending. By integrating with public API endpoints, the application provides citizens with an intuitive dashboard to track fiscal allocations and expenditures in real-time.
+**A sophisticated Android application for civic transparency and fiscal monitoring.**
 
-Built with a focus on modern Android development practices, Doge-Watchdog leverages high-performance data processing to transform complex financial records into accessible, actionable insights.
+Doge-Watchdog is designed to bridge the gap between complex government data and the citizens it impacts. By integrating with high-fidelity public API endpoints, the application provides a real-time dashboard that tracks, visualizes, and audits government spending allocations.
 
-## 🚀 Getting Started
+---
 
-Follow these instructions to set up the project and run it on your local environment for development and testing purposes.
+## 🚀 Key Features
 
-### Prerequisites
+- **Real-Time Fiscal Tracking**: Continuous integration with government spending APIs to provide up-to-the-minute expenditure data.
+- **Transparency Dashboards**: Interactive charts and visualizations built with **Jetpack Compose** that break down spending by department, category, and date.
+- **Audit Alerts**: Automated notifications for unusually large fiscal allocations or deviations from historical spending patterns.
+- **Public API Integration**: Native support for the **USAspending.gov API** and other regional transparency endpoints.
 
-- [Android Studio](https://developer.android.com/studio) (Latest Version Recommended)
-- A valid API Key for data services
+---
 
-### Installation & Local Setup
+## 🛠️ Technical Stack
 
-1. **Clone the Repository**
-   Open your terminal and clone the project to your local machine.
+- **UI**: 100% Jetpack Compose for a modern, reactive interface.
+- **Networking**: Retrofit + OkHttp for robust API communication.
+- **Architecture**: MVVM with Clean Architecture principles for maintainable code.
+- **Data Persistence**: Room Database for offline caching of fiscal records.
 
-2. **Open in Android Studio**
-   Launch Android Studio, select **Open**, and navigate to the project directory. Allow the IDE to sync Gradle files and resolve any dependencies.
+---
 
-3. **Configure Environment Variables**
-   The application requires an API key for its data processing engine.
-   - Create a file named `.env` in the root project directory.
-   - Add your key to the file: `GEMINI_API_KEY=your_actual_key_here`
-   - Refer to `.env.example` for the required format.
+## 📦 Local Setup
 
-4. **Build Configuration**
-   To prepare the project for a local debug build, locate the `build.gradle.kts` file in the app module and ensure the signing configuration is set for your local environment (e.g., removing any specific remote signing references if necessary).
-
-5. **Deployment**
-   Select your target device or emulator and click **Run** (Shift + F10) to deploy the application.
+1.  **Clone the Repository**: `git clone https://github.com/TheGitCommitMan/Doge-Watchdog.git`
+2.  **Open in Android Studio**: Ladybug or newer.
+3.  **API Keys**: Register for a developer account at your preferred transparency portal and configure the keys in the application settings.
+4.  **Build**: Execute `./gradlew assembleDebug` to generate the testing APK.
